@@ -9,6 +9,7 @@ phases:
     - echo Logging in to Amazon ECR....
     - aws --version
     # login to Elastic container registry
+    - docker start
     - eval $('aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/y4w0k2b7')
     - REPOSITORY_URI=public.ecr.aws/y4w0k2b7/yukbisa2
     - IMAGE_TAG=1.0
