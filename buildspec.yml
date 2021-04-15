@@ -14,7 +14,6 @@ phases:
     - IMAGE_TAG=1.0
   build:
     commands:
-    - docker start yukbisa2
     - echo Build started on `date`
     - echo installing composer..
     - composer install
